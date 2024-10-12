@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanGuide : EditorWindow {
         private bool isFoldout = true;
         private LazyPanTool _tool;

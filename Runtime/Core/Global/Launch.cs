@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Launch : MonoBehaviour {
         public static Launch instance;
         public bool OpenConsole;

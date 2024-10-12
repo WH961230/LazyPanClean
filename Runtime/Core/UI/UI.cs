@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class UI : SingletonMonoBehaviour<UI> {
         private Comp UIComp;
         private Dictionary<string, Comp> uICompAlwaysDics = new Dictionary<string, Comp>();

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public partial class Loader {
         private static string SPRITE_PATH = "Assets/LazyPan/Bundles/Arts/Images/";
         private static string SPRITE_SUFFIX = ".png";

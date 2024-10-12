@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     [CustomEditor(typeof(ColliderTool))]
     public class ColliderToolEditor : Editor {
         public override void OnInspectorGUI() {

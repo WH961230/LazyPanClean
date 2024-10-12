@@ -1,7 +1,7 @@
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class ButtonRegister {
         public static void AddListener(Button button, UnityAction unityAction) {
             button.onClick.AddListener(unityAction);

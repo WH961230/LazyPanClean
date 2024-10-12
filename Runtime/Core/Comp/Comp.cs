@@ -12,7 +12,7 @@ using Button = UnityEngine.UI.Button;
 using Object = UnityEngine.Object;
 using Slider = UnityEngine.UI.Slider;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Comp : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler {
         public UnityEvent<GameObject, GameObject> OnParticleCollisionEvent;
         [HideInInspector] public UnityEvent<Collider> OnTriggerEnterEvent;

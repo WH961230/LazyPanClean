@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour {
         static T instance = null;
 

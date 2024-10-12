@@ -1,4 +1,4 @@
-namespace LazyPan {
+namespace LazyPanClean {
     public interface IFlow {
         public void Init(Flow flow);//初始化
         public void Clear();//清除

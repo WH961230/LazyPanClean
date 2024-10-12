@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using LazyPan;
+using LazyPanClean;
 using UnityEngine;
 
 public enum ClockType {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Game : MonoBehaviour {
         public static Game instance;
         public UnityEvent OnUpdateEvent = new UnityEvent();

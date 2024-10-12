@@ -1,4 +1,4 @@
-﻿namespace LazyPan {
+﻿namespace LazyPanClean {
     public partial class Label {
         //全局
         public static string CAMERA = "Camera"; //相机

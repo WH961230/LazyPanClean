@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine.InputSystem;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class ConsoleEx : Singleton<ConsoleEx> {
         private Dictionary<int, List<string>> contentDic = new Dictionary<int, List<string>>();
         private Comp comp;

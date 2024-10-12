@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class EntityRegister {
         public static int EntityID;//为实体分配的ID
         public static Dictionary<int, Entity> EntityDic = new Dictionary<int, Entity>();

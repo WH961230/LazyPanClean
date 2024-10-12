@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanSupport : EditorWindow {
         private bool isFoldoutList;
         private Texture2D image;

@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace LazyPan {
+namespace LazyPanClean {
 #if UNITY_EDITOR
     public class Generate : EditorWindow {
         private string behaviourName;

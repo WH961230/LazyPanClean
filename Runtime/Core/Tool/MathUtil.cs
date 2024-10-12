@@ -1,4 +1,4 @@
-﻿namespace LazyPan {
+﻿namespace LazyPanClean {
     public class MathUtil : Singleton<MathUtil> {
         public int[] GetRandNoRepeatIndex(int length, int resultCount) {
             return GetIndexs(length, resultCount);

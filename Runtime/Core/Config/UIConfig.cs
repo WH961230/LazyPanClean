@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class UIConfig {
 		public string Sign;
 		public string Description;

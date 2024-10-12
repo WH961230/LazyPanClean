@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class BehaviourRegister {
         private static Dictionary<int, List<Behaviour>> BehaviourDic = new Dictionary<int, List<Behaviour>>();
 

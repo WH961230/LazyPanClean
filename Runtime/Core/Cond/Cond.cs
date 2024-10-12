@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Cond : Singleton<Cond> {
         #region 全局通用实体
 

@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using CompressionLevel = System.IO.Compression.CompressionLevel;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanTool : EditorWindow {
         public Dictionary<Type, EditorWindow> editorWindows = new Dictionary<Type, EditorWindow>();
 

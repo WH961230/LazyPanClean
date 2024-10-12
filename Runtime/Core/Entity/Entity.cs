@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Object = UnityEngine.Object;
 
-namespace LazyPan {
+namespace LazyPanClean {
     [Serializable]
     public class Entity {
         public int ID;//身份ID

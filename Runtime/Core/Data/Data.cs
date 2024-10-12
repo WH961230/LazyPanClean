@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Data : MonoBehaviour {
        public List<BoolData> Bools = new List<BoolData>();
         public List<IntData> Ints = new List<IntData>();

@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanBehaviour : EditorWindow {
         private bool isFoldoutTool;
         private bool isFoldoutBehaviour;

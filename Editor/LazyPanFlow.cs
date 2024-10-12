@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     // 定义一个存储多个字段的类
     [System.Serializable]
     public class MyData {

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanTutorial : EditorWindow {
         private Texture2D image;
         public void OnStart(LazyPanTool lazyPanTool) {

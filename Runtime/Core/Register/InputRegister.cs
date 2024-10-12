@@ -1,7 +1,7 @@
 using System;
 using UnityEngine.InputSystem;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class InputRegister : Singleton<InputRegister> {
         public static string Shift = "Player/Shift";
         public static string Motion = "Player/Motion";

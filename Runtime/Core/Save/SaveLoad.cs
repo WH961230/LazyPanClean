@@ -2,7 +2,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class SaveLoad : Singleton<SaveLoad> {
         //存储数据
         public void Save(string saveFileName, object data) {

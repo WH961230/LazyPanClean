@@ -1,4 +1,4 @@
-﻿namespace LazyPan {
+﻿namespace LazyPanClean {
     public class Config : Singleton<Config> {
         public void Init() {
             BehaviourConfig.Init();

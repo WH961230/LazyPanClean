@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Stage : MonoBehaviour {
         public Comp loadingUIComp; //加载界面
         private StageWork work; //当前作业

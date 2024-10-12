@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using LazyPan;
+using LazyPanClean;
 using UnityEditor;
 using UnityEngine;
 

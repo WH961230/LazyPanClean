@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
 #if UNITY_EDITOR
     public class ToolSet : EditorWindow {
         [MenuItem("LazyPan/点位工具组/收集点位组")]

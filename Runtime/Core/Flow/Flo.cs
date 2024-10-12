@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine.SceneManagement;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Flo : Singleton<Flo> {
         Dictionary<Type, Flow> flows = new Dictionary<Type, Flow>();
         public string CurFlowSign;

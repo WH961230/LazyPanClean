@@ -1,7 +1,7 @@
 using UnityEngine;
 #命名空间#
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Behaviour_#行为类型#_#行为标识# : Behaviour {
         public Behaviour_#行为类型#_#行为标识#(Entity entity, string behaviourSign) : base(entity, behaviourSign) {
         }

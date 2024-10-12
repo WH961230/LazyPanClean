@@ -1,4 +1,4 @@
-namespace LazyPan {
+namespace LazyPanClean {
     public class Singleton<T> where T : new() {
         static T instance = default;
 

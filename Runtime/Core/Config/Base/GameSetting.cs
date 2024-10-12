@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     [CreateAssetMenu(menuName = "LazyPan/GameSetting", fileName = "Setting")]
     public class GameSetting : ScriptableObject {
         [Header("配置脚本模板路径")] public string TxtPath;

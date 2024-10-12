@@ -1,4 +1,4 @@
-﻿namespace LazyPan {
+﻿namespace LazyPanClean {
     public abstract class Behaviour {
         public string BehaviourSign;
         public Data BehaviourData;

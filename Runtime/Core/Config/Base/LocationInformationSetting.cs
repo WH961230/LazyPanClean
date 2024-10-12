@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     [CreateAssetMenu(menuName = "LazyPan/LocationInformationSetting")]
     public class LocationInformationSetting : ScriptableObject {
         public string SettingName;

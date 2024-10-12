@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public abstract class Flow : IFlow {
         public Flow BaseFlow;
         public Flow CurrentFlow;

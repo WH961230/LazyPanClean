@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Sound : SingletonMonoBehaviour<Sound> {
         public GameObject SoundPlay(string soundSign, Vector3 targetPos, bool loop, float destroyDelay) {
             GameObject soundGo = new GameObject(soundSign);

@@ -1,4 +1,4 @@
-﻿namespace LazyPan {
+﻿namespace LazyPanClean {
     public static class LogUtil {
         public static void Log(object message) {
             UnityEngine.Debug.Log(message);

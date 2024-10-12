@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class AgentUtil : Singleton<AgentUtil> {
         public NavMeshPath GetAgentPath(NavMeshAgent agent, Vector3 targetPoint) {
             NavMeshPath path = new NavMeshPath();

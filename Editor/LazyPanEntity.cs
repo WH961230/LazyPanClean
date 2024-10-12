@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class LazyPanEntity : EditorWindow {
         private bool isFoldoutTool;
         private bool isFoldoutData;

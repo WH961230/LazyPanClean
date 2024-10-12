@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Flow_#流程标识# : Flow {
 #界面属性#
 #实体属性#

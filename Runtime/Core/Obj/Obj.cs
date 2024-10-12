@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LazyPan {
+namespace LazyPanClean {
     public class Obj : Singleton<Obj> {
         public Transform ObjRoot;//根节点
 
