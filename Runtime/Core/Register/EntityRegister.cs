@@ -4,12 +4,12 @@ using UnityEngine;
 namespace LazyPanClean {
     public class EntityRegister {
         public static int EntityID;//为实体分配的ID
-        public static Dictionary<int, Entity> EntityDic = new Dictionary<int, Entity>();
+        public static Dictionary<int, LazyPanClean.Entity> EntityDic = new Dictionary<int, LazyPanClean.Entity>();
 
         #region 增删改查
 
         //增
-        public static bool AddEntity(int id, Entity entity) {
+        public static bool AddEntity(int id, LazyPanClean.Entity entity) {
             if (EntityDic.TryAdd(id, entity)) {
                 ConsoleEx.Instance.ContentSave("entity", $"ID:{id} 注册实体:{entity.ObjConfig.Name}");
                 return true;
@@ -27,7 +27,7 @@ namespace LazyPanClean {
         }
         
         //查ID
-        public static bool TryGetEntityByID(int id, out Entity entity) {
+        public static bool TryGetEntityByID(int id, out LazyPanClean.Entity entity) {
             if (EntityDic.TryGetValue(id, out entity)) {
                 return true;
             }
@@ -36,8 +36,8 @@ namespace LazyPanClean {
         }
         
         //查标识
-        public static bool TryGetEntityBySign(string objSign, out Entity entity) {
-            foreach (Entity tmpEntity in EntityDic.Values) {
+        public static bool TryGetEntityBySign(string objSign, out LazyPanClean.Entity entity) {
+            foreach (LazyPanClean.Entity tmpEntity in EntityDic.Values) {
                 if (objSign == tmpEntity.ObjConfig.Sign) {
                     entity = tmpEntity;
                     return true;
@@ -49,9 +49,9 @@ namespace LazyPanClean {
         }
         
         //查类型
-        public static bool TryGetEntitiesByType(string type, out List<Entity> entity) {
-            entity = new List<Entity>();
-            foreach (Entity tmpEntity in EntityDic.Values) {
+        public static bool TryGetEntitiesByType(string type, out List<LazyPanClean.Entity> entity) {
+            entity = new List<LazyPanClean.Entity>();
+            foreach (LazyPanClean.Entity tmpEntity in EntityDic.Values) {
                 if (type == tmpEntity.Type) {
                     entity.Add(tmpEntity);
                 }
@@ -66,8 +66,8 @@ namespace LazyPanClean {
         }
 
         //查组件
-        public static bool TryGetEntityByComp(Comp comp, out Entity entity) {
-            foreach (Entity tempEntity in EntityDic.Values) {
+        public static bool TryGetEntityByComp(Comp comp, out LazyPanClean.Entity entity) {
+            foreach (LazyPanClean.Entity tempEntity in EntityDic.Values) {
                 if (tempEntity.Comp == comp) {
                     entity = tempEntity;
                     return true;
@@ -79,8 +79,8 @@ namespace LazyPanClean {
         }
         
         //查BodyInstanceID
-        public static bool TryGetEntityByBodyPrefabID(int id, out Entity entity) {
-            foreach (Entity tempEntity in EntityDic.Values) {
+        public static bool TryGetEntityByBodyPrefabID(int id, out LazyPanClean.Entity entity) {
+            foreach (LazyPanClean.Entity tempEntity in EntityDic.Values) {
                 Transform bodyTran = Cond.Instance.Get<Transform>(tempEntity, Label.BODY);
                 if (bodyTran != null && bodyTran.gameObject != null && bodyTran.gameObject.GetInstanceID() == id) {
                     entity = tempEntity;
@@ -93,7 +93,7 @@ namespace LazyPanClean {
         }
         
         //查某类型的随机一个实体
-        public static bool TryGetRandEntityByType(string type, out Entity entity) {
+        public static bool TryGetRandEntityByType(string type, out LazyPanClean.Entity entity) {
             bool findTypeEntities = TryGetEntitiesByType(type, out List<Entity> entities);
             if (!findTypeEntities) {
                 entity = default;
@@ -105,10 +105,10 @@ namespace LazyPanClean {
         }
         
         //查距离内的所有指定类型的实体
-        public static bool TryGetEntitiesWithinDistance(string type, Vector3 fromPoint, float distance, out List<Entity> entity) {
-            entity = new List<Entity>();
-            if (TryGetEntitiesByType(type, out List<Entity> tmpEntities)) {
-                foreach (Entity tmpEntity in tmpEntities) {
+        public static bool TryGetEntitiesWithinDistance(string type, Vector3 fromPoint, float distance, out List<LazyPanClean.Entity> entity) {
+            entity = new List<LazyPanClean.Entity>();
+            if (TryGetEntitiesByType(type, out List<LazyPanClean.Entity> tmpEntities)) {
+                foreach (LazyPanClean.Entity tmpEntity in tmpEntities) {
                     float disSqrt = distance * distance;
                     Transform body = Cond.Instance.Get<Transform>(tmpEntity, Label.BODY);
                     if (body != null) {
@@ -127,13 +127,13 @@ namespace LazyPanClean {
         }
 
         //查实体列表内获取随机实体
-        private static Entity GetRandEntity(List<Entity> entities) {
+        private static LazyPanClean.Entity GetRandEntity(List<LazyPanClean.Entity> entities) {
             return entities[Random.Range(0, entities.Count)];
         }
 
         //是否有该实体
-        public static bool HasEntity(Entity entity) {
-            foreach (Entity tempEntity in EntityDic.Values) {
+        public static bool HasEntity(LazyPanClean.Entity entity) {
+            foreach (LazyPanClean.Entity tempEntity in EntityDic.Values) {
                 if (tempEntity == entity) {
                     return true;
                 }
