@@ -1,0 +1,12 @@
+{
+  "name": "evoreek.lazypan",
+  "version": "0.0.1",
+  "displayName": "LazyPanClean",
+  "description": "\u4e3a\u4e86\u5b9e\u73b0\u61d2\u60f0\u7684\u6846\u67b6",
+  "dependencies": {
+    "com.unity.inputsystem": "1.5.1",
+    "com.unity.addressables": "1.21.20",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.timeline": "1.7.4"
+  }
+}
