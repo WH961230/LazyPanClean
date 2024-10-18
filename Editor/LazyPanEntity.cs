@@ -23,7 +23,7 @@ namespace LazyPanClean {
         
         public void OnStart(LazyPanTool tool) {
             _tool = tool;
-            ReadCSV.Instance.Read("ObjConfig", out string content, out string[] lines);
+            LPReadCSV.Instance.Read("ObjConfig", out string content, out string[] lines);
             if (lines != null && lines.Length > 0) {
                 EntityConfigStr = new string[lines.Length - 3][];
                 for (int i = 0; i < lines.Length; i++) {
@@ -41,7 +41,7 @@ namespace LazyPanClean {
                 }
             }
 
-            ReadCSV.Instance.Read("BehaviourConfig", out content, out lines);
+            LPReadCSV.Instance.Read("BehaviourConfig", out content, out lines);
             if (lines != null && lines.Length > 0) {
                 BehaviourConfigStr = new string[lines.Length - 3][];
                 for (int i = 0; i < lines.Length; i++) {
@@ -181,7 +181,7 @@ namespace LazyPanClean {
         }
 
         private void UpdateEntityBehaviourData(bool add, string flowSign, string entitySign, string behaviourName) {
-            ReadCSV.Instance.Read("ObjConfig", out string content, out string[] lines);
+            LPReadCSV.Instance.Read("ObjConfig", out string content, out string[] lines);
             for (int i = 0; i < lines.Length; i++) {
                 if (i > 2) {
                     string[] linesStr = lines[i].Split(',');
@@ -214,7 +214,7 @@ namespace LazyPanClean {
                 }
             }
 
-            ReadCSV.Instance.Write("ObjConfig", lines);
+            LPReadCSV.Instance.Write("ObjConfig", lines);
         }
 
         private void ExpandEntityData() {
@@ -391,7 +391,7 @@ namespace LazyPanClean {
             }
 
             // 创建实例并赋值
-            LocationInformationSetting testAsset = CreateInstance<LocationInformationSetting>();
+            LPLocationInformationSetting testAsset = CreateInstance<LPLocationInformationSetting>();
             testAsset.SettingName = _instanceObjChineseName;
             testAsset.locationInformationDatas = new List<LocationInformationData>();
             testAsset.locationInformationDatas.Add(new LocationInformationData());

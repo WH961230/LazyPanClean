@@ -36,7 +36,7 @@ namespace LazyPanClean {
 
         public void OnStart(LazyPanTool tool) {
             _tool = tool;
-            ReadCSV.Instance.Read("FlowGenerate", out string content, out string[] lines);
+            LPReadCSV.Instance.Read("FlowGenerate", out string content, out string[] lines);
             if (lines != null && lines.Length > 0) {
                 FlowGenerateStr = new string[lines.Length - 2][];
                 for (int i = 0; i < lines.Length; i++) {

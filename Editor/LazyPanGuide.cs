@@ -451,11 +451,11 @@ namespace LazyPanClean {
         }
 
         private void AutoGenerateFlow() {
-            Generate.GenerateFlow();
+            LPGenerate.GenerateFlow();
         }
 
         private void AutoGenerateBehaviour() {
-            Generate.GenerateBehaviour(false);
+            LPGenerate.GenerateBehaviour(false);
         }
 
         private void TestSceneAndPlay() {

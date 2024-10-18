@@ -13,7 +13,7 @@ namespace LazyPanClean {
         public void OnStart(LazyPanTool tool) {
             _tool = tool;
 
-            ReadCSV.Instance.Read("BehaviourConfig", out string content, out string[] lines);
+            LPReadCSV.Instance.Read("BehaviourConfig", out string content, out string[] lines);
             if (lines != null && lines.Length > 0) {
                 BehaviourConfigStr = new string[lines.Length - 3][];
                 for (int i = 0; i < lines.Length; i++) {
@@ -147,7 +147,7 @@ namespace LazyPanClean {
         }
 
         private void AutoGenerateBehaviourTemplate() {
-            Generate.GenerateBehaviour(true);
+            LPGenerate.GenerateBehaviour(true);
         }
 
         private void Title() {
