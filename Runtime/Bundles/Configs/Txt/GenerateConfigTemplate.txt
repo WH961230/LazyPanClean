@@ -1,7 +1,8 @@
+using LazyPanClean;
 using System;
 using System.Collections.Generic;
 
-namespace LazyPanClean {
+namespace LazyPan {
     public class #ClassName# {
 #Property#
         private static bool isInit;

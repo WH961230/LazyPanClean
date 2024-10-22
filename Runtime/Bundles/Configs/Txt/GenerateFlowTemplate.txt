@@ -1,12 +1,13 @@
+using LazyPanClean;
 using UnityEngine;
 
-namespace LazyPanClean {
-    public class Flow_#流程标识# : Flow {
+namespace LazyPan {
+    public class Flow_#流程标识# : LPFlow {
 #界面属性#
 #实体属性#
-        public override void Init(Flow baseFlow) {
+        public override void Init(LPFlow baseFlow) {
             base.Init(baseFlow);
-            ConsoleEx.Instance.ContentSave("flow", "Flow_#流程标识#  #流程名#流程");
+            LPConsoleEx.Instance.ContentSave("flow", "Flow_#流程标识#  #流程名#流程");
 #创建界面#
 #初始化创建实体#
         }
@@ -16,7 +17,7 @@ namespace LazyPanClean {
         /*下一步*/
         public void Next(string teleportSceneSign) {
             Clear();
-            Launch.instance.StageLoad(teleportSceneSign);
+            LPLaunch.instance.StageLoad(teleportSceneSign);
         }
 
         public override void Clear() {

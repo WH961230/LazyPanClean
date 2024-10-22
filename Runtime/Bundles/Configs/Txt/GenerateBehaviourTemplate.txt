@@ -1,9 +1,10 @@
+using LazyPanClean;
 using UnityEngine;
 #命名空间#
 
-namespace LazyPanClean {
-    public class Behaviour_#行为类型#_#行为标识# : Behaviour {
-        public Behaviour_#行为类型#_#行为标识#(Entity entity, string behaviourSign) : base(entity, behaviourSign) {
+namespace LazyPan {
+    public class LPBehaviour_#行为类型#_#行为标识# : LPBehaviour {
+        public LPBehaviour_#行为类型#_#行为标识#(LPEntity entity, string behaviourSign) : base(entity, behaviourSign) {
         }
 
         public override void DelayedExecute() {
